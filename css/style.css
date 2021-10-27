@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&family=Zen+Antique+Soft&display=swap');
+
+body {
+    font-family: 'Zen Antique Soft', serif;
+    margin:0;
+    padding:0;
+   box-sizing: border-box;
+}
+/* utilities */
+a {
+    text-decoration: none!important;
+    margin-right: 1rem;
+    color:black;
+}
+li {
+    list-style: none!important;
+}
+/* navbar */
+.btn-nav {
+    width: auto !important;
+    background-color: black;
+    color:white;
+    border:none;
+    padding:10px;
+    margin-bottom: 15px;
+}
+.nav-grid {
+    display: grid!important;
+    grid-template-columns: 5fr 2fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* three mobile images section */
+.three-mobiles-grid {
+    display: grid!important;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* butterfly-image-section */
+.butterfly {
+    background: rgba(243, 253, 253, 1)!important;
+
+}
+/* statistics section */
+.stats-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* .above-footer section */
+.above-footer {
+    border:1px solid rgba(1, 31, 44, 1)!important;
+    border-radius: 1px;
+}
+
+/* footer-grid-section */
+.footer-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 4fr 1fr; 
+}
+.footer-color  {
+    background: rgba(250, 250, 250, 1)!important;
+    height:auto;
+}
+/* inside footer grid copy right lines */
+.full-last {
+    margin-top: 6rem!important;
+}
+.social-media li a {
+    margin-left: 10px!important;
+}
+.rules ul li a {
+    color: rgba(1, 31, 44, 1)!important;
+}
+/* mobile screen */
+@media (max-width:500px) {
+    .btn-nav {
+        width: 130px !important;
+        margin-bottom: 0%;
+    }
+    .stats-img {
+        position:relative!important;
+        right:1rem;
+    }
+    .three-mobile {
+        position: relative!important;
+        right:1rem;
+    }
+    .copyright {
+        margin-left: 23px!important;
+    }
+    .social-media li a {
+        margin-left: 0px!important;
+    }
+   .About-nebmist li a {
+     display: none!important;
+    }
+    .three-mobiles-grid {
+        grid-template-columns: 1fr!important;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr!important;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr!important;
+        row-gap: 10px;
+    }
+    .full-last {
+        margin-top:1rem!important;
+    }
+}
